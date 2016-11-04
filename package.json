@@ -1,0 +1,22 @@
+{
+  "name": "online-school",
+  "version": "1.0.0",
+  "description": "Express Online School Assignment",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChidoYo/online-school.git"
+  },
+  "author": "Erick, Paul and Jeff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChidoYo/online-school/issues"
+  },
+  "homepage": "https://github.com/ChidoYo/online-school#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
