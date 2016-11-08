@@ -10,7 +10,7 @@ app.get('/contact', function(request, response) {
 });
 app.get('/courses', function(request, response) {
   fs.readFile('products.json', 'utf8', function(err, data) {
-    var products = JSON.parse(data);
+    var productsPARSED = JSON.parse(data);
     response.locals = {
       products: products.products
     };
