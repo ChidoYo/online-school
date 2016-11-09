@@ -18,7 +18,6 @@
   "homepage": "https://github.com/ChidoYo/online-school#readme",
   "dependencies": {
     "ejs": "^2.5.2",
-    "express": "^4.14.0",
-    "materialize-css": "^0.97.8"
+    "express": "^4.14.0"
   }
 }
