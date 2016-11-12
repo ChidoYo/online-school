@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bro School, Bro!</title>
+      <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+
+      <nav>
+          <div class="container">
+              <div class="nav-wrapper">
+                  <a href="/" class="brand-logo">Bro School: The School for Bros</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li><a href="/courses">Courses</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <div class="container main">
+
+          <a href="/courses" class="waves-effect waves-light btn">back</a>
+
+          <% if(course) { %>
+              <h4><%= course.name %></h4>
+              <p>
+                <strong>Instructor:</strong> <%= course.instructor %><br />
+                <strong>Description:</strong> <%= course.description %><br />
+                <strong>Price:</strong> $<%= course.base_price %><br />
+                <strong>Course Length:</strong> <%= course.course_length %><br />
+              </p>
+              <p>
+              <strong>Rating:</strong>
+                  <% for (i = 0; i < course.rating; i++) { %>
+                      <img src="../img/star.jpg" />
+                  <% }; %>
+              </p>
+              <figure>
+                <img src="<%= course.img %>"  />
+              </figure>
+          <% } else { %>
+            <p>Product not found</p>
+          <% } %>
+
+      </div>
+
+  </body>
+
+</html>

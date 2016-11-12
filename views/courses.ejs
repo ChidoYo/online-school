@@ -1,24 +1,52 @@
-<a href="/">Back</a>
-<h1>courses</h1>
-<table>
-   <thead>
-       <tr>
-           <th>Show</th>
-           <th>Name</th>
-           <th>Price</th>
-           <th>Description</th>
-       </tr>
-   </thead>
-   <tbody>
-       <% products.forEach( function(product) { %>
-           <tr>
-             <td>
-               <a href="<%= '/products/' + product.id %>">Show</a>
-             </td>
-             <td><%= product.name %></td>
-             <td><%= product.base_price %></td>
-             <td><%= product.description %></td>
-           </tr>
-       <% }); %>
-   </tbody>
-</table>
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bro School, Bro!</title>
+      <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+
+      <nav>
+          <div class="container">
+              <div class="nav-wrapper">
+                  <a href="/" class="brand-logo">Bro School: The School for Bros</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li><a href="/courses">Courses</a></li>
+                      <li><a href="/contact">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <div class="container main">
+
+          <h1>courses</h1>
+          <table>
+             <thead>
+                 <tr>
+                     <th>Show</th>
+                     <th>Name</th>
+                     <th>Price</th>
+                     <th>Course&nbsp;Length</th>
+                     <th>Description</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <% courses.forEach( function(course) { %>
+                     <tr>
+                       <td>
+                         <a href="<%= '/courses/' + course.id %>">Show</a>
+                       </td>
+                       <td><%= course.name %></td>
+                       <td><%= course.base_price %></td>
+                       <td><%= course.course_length %></td>
+                       <td><%= course.description %></td>
+                     </tr>
+                 <% }); %>
+             </tbody>
+          </table>
+
+      </div>
+
+  </body>
+</html>

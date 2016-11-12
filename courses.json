@@ -1,0 +1,34 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "name": "How to do Sick Backflips",
+            "base_price": 200,
+            "description": "Learn how to do the sickest backflips by living backflip legends",
+            "course_length": "2 Days",
+            "instructor": "Jeff V.",
+            "img": "../img/back-flip.jpg",
+            "rating": 4
+        },
+        {
+            "id": 2,
+            "name": "Stuntman 101",
+            "base_price": 400,
+            "description": "Get hands-on experience on how to deliver death-defying acrobatic stunts to land a low-paying, low-profile job in Hollywood!",
+            "course_length": "6 Weeks",
+            "instructor": "Erick P.",
+            "img": "../img/stuntman.jpg",
+            "rating": 5
+        },
+        {
+            "id": 3,
+            "name": "Memeology",
+            "base_price": 100,
+            "description": "Kids these days, am I right? Communicate with YOUR teen by learning the dankest, most up-to-date memes on the market. You definitely won't regret this!",
+            "course_length": "3 Weeks",
+            "instructor": "Paul C.",
+            "img": "../img/memeology.jpg",
+            "rating": 3
+        }
+    ]
+}
